@@ -63,9 +63,6 @@ while play:
     play_a_again = input("Type 'y' if you want to play again.  ").upper()
     
 #ask user if he/she wants to play again
-    if play_a_again == "Y":
-        continue
-    else:
-        print("Goodbye. Have a nice day")
-        exit()
-    
+    if play_a_again != "Y":
+      print("Goodbye. Have a nice day")
+      exit()
