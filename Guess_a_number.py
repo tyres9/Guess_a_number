@@ -16,6 +16,16 @@ def difficulty(check_level_answer):
             check_level= True         
         else:
             check_level_answer = input("Choose the correct level: ").upper()
+            
+def number_of_lives(check_level_answer):            
+    #Print the chosen difficulty
+    if level == "E":       
+        print("You have 10 attempts to guess the number")  
+        return 10          
+    elif level == "H":
+        print("You have 5 attempts to guess the number")   
+        return 5
+    
  
 
 #check if guess number is higher or lower from the generated random number
@@ -47,14 +57,7 @@ while play:
     level = input("Choose the level of difficlty. Type 'E' for easy and 'H' for hard : ").upper()
     difficulty(level)
 # Choose the dificulty level between easy (10 lives) and hard(5 lives)
-#Print the chosen difficulty
-    if level == "E":
-        lives = 10 
-        print("You have 10 attempts to guess the number")            
-    elif level == "H":
-        lives = 5
-    
-        print("You have 5 attempts to guess the number")   
+    lives = number_of_lives(level)
     number = the_number()
     print(number)
 # guess a number
