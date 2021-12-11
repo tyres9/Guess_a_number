@@ -35,7 +35,7 @@ def guess_check(the_number,guess,lives):
             print(f"No more lives left. The random number is {the_number}")
             return "You lost" 
         elif lives == 1:
-            print(f"You only have {lives} live left.")
+            print(f"You only have {lives} life left.")
         else:
             print(f"You only have {lives} lives left.")
 
